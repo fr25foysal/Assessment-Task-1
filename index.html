@@ -10,6 +10,13 @@
         tailwind.config = {
           theme: {
             extend: {
+              dropShadow: {
+        '3xl': '0 24px 20px #00000095',
+        '4xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
+      },
               colors: {
                 primary: '#2042B6',
                 background: '#F3F3F3'
@@ -30,11 +37,68 @@
           }
         }
       </style>
+      <!-- Fontawesome -->
+      <script src="https://kit.fontawesome.com/ef1c1f52da.js" crossorigin="anonymous"></script>
     <title>The WPPOOL Index</title>
 
 </head>
 <body>
+    <!-- Transparent Header -->
     
+     <header class="bg-transparent fixed w-full z-10 py-4 mx-auto">
+        <div class="h-16 max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+               <img src="assets/logo.png" alt="logo">
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="text-white bg-transparent w-[42px] h-[42px] rounded-full border-2">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </button>
+                <button class=" p-2 font-primary text-white bg-transparent border-2 rounded-3xl">
+                  Download the 2024 Report
+                </button>
+                <button class="text-white text-2xl">
+                  <i class="fa-solid fa-bars z-10"></i>
+                </button>
+            </div>
+        </div>
+     </header>
+
+     <!-- Banner -->
+
+   
+       <div class="flex h-screen bg-primary z-10 w-full flex-col items-center justify-center text-white">
+        
+          <h1 class="text-[76px]">The WPPOOL Index</h1>
+         <p class="text-xl font-primary poppins-light">Monitor the performance of emerging, publicly traded, financial technology companies</p>
+         
+         <div class="h-56 absolute skew-y-[35deg] w-[400px] border-2 -rotate-90"></div>
+         <div class="flex w-11/12 justify-between content-end absolute bottom-[50px] ">
+          <div class="flex flex-col gap-12">
+            <div>
+              <h4 class="text-4xl">60</h4>
+              <p class="poppins-regular pt-2 text-[#CDCDCD]">Companies</p>
+            </div>
+            <div>
+              <h4 class="text-4xl">$100B</h4>
+              <p class="poppins-regular pt-2 text-[#CDCDCD]">Market Cap</p>
+            </div>
+            <div>
+              <h4 class="text-4xl">3.5x</h4>
+              <p class="poppins-regular pt-2 text-[#CDCDCD]">Revenue multiple</p>
+            </div>
+            <div>
+              <h4 class="text-4xl">60%</h4>
+              <p class="poppins-regular pt-2 text-[#CDCDCD]">LTM avg. revenue growth rate</p>
+            </div>
+          </div>
+          <button class="bg-white w-12 h-12 absolute right-0 bottom-0 rounded-full drop-shadow-3xl">
+            <i class="fa-solid fa-arrow-down text-primary"></i>
+          </button>
+        </div>
+        </div>
+
+      
 
 </body>
 </html>
