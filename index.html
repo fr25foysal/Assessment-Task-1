@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Defined theme -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#2042B6',
+                background: '#F3F3F3'
+
+              },
+              fontFamily: {
+                primary: ['Poppins', 'Arial', 'sans-serif']
+              }
+            }
+          }
+        }
+      </script>
+      <!-- Custom Css With Tailwind -->
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
     <title>The WPPOOL Index</title>
-    
+
 </head>
 <body>
     
+
 </body>
 </html>
