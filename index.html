@@ -50,17 +50,35 @@
             <div class="flex items-center">
                <img src="assets/logo.png" alt="logo">
             </div>
-            <div class="flex items-center gap-4">
-                <button class="text-white bg-transparent w-[42px] h-[42px] rounded-full border-2">
+            <div class="navContainer bg-white static px-5 transition-all">
+               <div class="flex items-center gap-4 ">
+                <button class="text-white bg-transparent w-[42px] h-[42px] rounded-full border-2 share-btn">
                     <i class="fa-solid fa-share-nodes"></i>
                 </button>
-                <button class=" p-2 font-primary text-white bg-transparent border-2 rounded-3xl">
+                <button class="report-btn p-2 text-sm font-primary text-white bg-transparent border-2 rounded-3xl">
                   Download the 2024 Report
                 </button>
-                <button class="text-white text-2xl">
+                <button class="text-white text-2xl nav-btn">
                   <i class="fa-solid fa-bars z-10"></i>
                 </button>
+              </div>
+            <div>
+              <div class="absolute">
+              <ul class="poppins-regular py-5 gap-3 flex flex-col">
+                <li>The WPPOOL Index</li>
+                <li>All Companies</li>
+                <li>Potential Future Listings</li>
+                <li>State of USA</li>
+                <li>Stories & Ideas</li>
+                <li>About WPPOOL</li>
+                <li>WPPOOL Portfolio Companies</li>
+              </ul>
+              <a href="#" class="text-primary text-md">Visit WPPOOL</a>
             </div>
+            </div>
+            
+          </div>
+          
         </div>
      </header>
 
@@ -69,8 +87,8 @@
    
        <div class="flex h-screen bg-primary z-10 w-full flex-col items-center justify-center text-white">
         
-          <h1 class="text-[76px]">The WPPOOL Index</h1>
-         <p class="text-xl font-primary poppins-light">Monitor the performance of emerging, publicly traded, financial technology companies</p>
+          <h1 class="text-[76px] absolute">The WPPOOL Index</h1>
+         <p class="text-xl font-primary absolute pt-28 poppins-light">Monitor the performance of emerging, publicly traded, financial technology companies</p>
          
          <div class="h-56 absolute skew-y-[35deg] w-[400px] border-2 -rotate-90"></div>
          <div class="flex w-11/12 justify-between content-end absolute bottom-[50px] ">
@@ -99,6 +117,6 @@
         </div>
 
       
-
+<script src="app.js"></script>
 </body>
 </html>
